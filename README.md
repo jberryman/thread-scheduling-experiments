@@ -18,3 +18,9 @@ other work to be done). If the time stamps are accurate this cycle takes only
 whether an optimization for this case (don’t deschedule when nothing else to
 do) would be beneficial when trying to use a very small context switch
 interval?
+
+### descheduling.hs
+
+Nothing to see here I think. Scheduling  and migration of threads all look
+normal here for different combinations of context switch interval (-C)  and
+capabilities (-N)
