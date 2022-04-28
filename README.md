@@ -24,3 +24,9 @@ interval?
 Nothing to see here I think. Scheduling  and migration of threads all look
 normal here for different combinations of context switch interval (-C)  and
 capabilities (-N)
+
+### cooperative_blocking.hs
+
+Nothing to see here I think. I wanted to make sure that socket communication
+was cooperative, so that recv could yield right away  without relying on the
+context switch interval (This is the case, since it's backed by threadWaitRead)
